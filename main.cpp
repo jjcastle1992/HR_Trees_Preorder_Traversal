@@ -49,9 +49,19 @@ class Node {
 };
 
 */
-
+    /* Pre-Order Traversal "visits":
+     * 1. ROOT
+     * 2. LEFT
+     * 3. RIGHT
+     *
+     * Time Complexity O(n)
+     * Space Complexity O(n)
+     */
     void preOrder(Node *root) {
-
+        //Prints our tree in the Pre-Order methodology
+        //1. Visit and Print payload at Root
+        //2. Visit and Print payload at left subtree until leaves are hit (root == null)
+        //3. Visit and Print payload at right subtree until leaves are hit (root == null)
     }
 
 }; //End of Solution
