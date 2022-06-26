@@ -61,7 +61,7 @@ class Node {
         //Prints our tree in the Pre-Order methodology
         if (root) {
             //1. Visit and Print payload at Root
-            std::cout << root->data << std::endl;
+            std::cout << root->data << " ";
             //2. Visit and Print payload at left subtree until leaves are hit (root == null)
             preOrder (root->left);
             //3. Visit and Print payload at right subtree until leaves are hit (root == null)
