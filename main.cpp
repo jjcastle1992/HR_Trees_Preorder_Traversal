@@ -60,8 +60,21 @@ class Node {
     void preOrder(Node *root) {
         //Prints our tree in the Pre-Order methodology
         //1. Visit and Print payload at Root
+        std::cout << root->data << std::endl;
         //2. Visit and Print payload at left subtree until leaves are hit (root == null)
+        if (root) {
+            preOrder (root->left);
+        }
+        else {
+            return;
+        }
         //3. Visit and Print payload at right subtree until leaves are hit (root == null)
+        if (root) {
+            preOrder (root->right);
+        }
+        else {
+            return;
+        }
     }
 
 }; //End of Solution
